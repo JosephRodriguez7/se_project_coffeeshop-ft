@@ -97,6 +97,47 @@
             </div>
           </div>
         </section>
+        <section class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label
+                >Name *
+                <input
+                  type="text"
+                  class="guestname"
+                  name="guestname"
+                  required
+                />
+              </label>
+              <label
+                >Number of guests *
+                <input type="number" class="guests" name="guests" required />
+              </label>
+              <label
+                >Date & time *
+                <input
+                  type="datetime"
+                  class="timedate"
+                  name="timedate"
+                  required
+                />
+              </label>
+              <label
+                >Your email *
+                <input type="email" class="email" name="email" required />
+              </label>
+              <label
+                >Book a table
+                <input type="submit" class="submit" name="submit" required />
+              </label>
+              <label
+                >I agree with the terms of use
+                <input type="checkbox" class="terms" name="terms" required />
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
 
       <footer class="footer">
