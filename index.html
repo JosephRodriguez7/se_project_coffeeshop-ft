@@ -101,41 +101,62 @@
           <h2 class="reservation__title">Book a table</h2>
           <form class="form reservation__form">
             <fieldset class="form__fieldset">
-              <label
+              <label class="form__label"
                 >Name *
                 <input
                   type="text"
-                  class="guestname"
+                  class="form__input"
                   name="guestname"
+                  placeholder="Name Surname"
                   required
                 />
               </label>
-              <label
+              <label class="form__label"
                 >Number of guests *
-                <input type="number" class="guests" name="guests" required />
+                <input
+                  type="number"
+                  class="form__input"
+                  name="guests"
+                  placeholder="1-8"
+                  min="1"
+                  max="8"
+                  required
+                />
               </label>
-              <label
+              <label class="form__label"
                 >Date & time *
                 <input
-                  type="datetime"
-                  class="timedate"
+                  type="datetime-local"
+                  class="form__input"
                   name="timedate"
                   required
                 />
               </label>
-              <label
+              <label class="form__label"
                 >Your email *
-                <input type="email" class="email" name="email" required />
-              </label>
-              <label
-                >Book a table
-                <input type="submit" class="submit" name="submit" required />
-              </label>
-              <label
-                >I agree with the terms of use
-                <input type="checkbox" class="terms" name="terms" required />
+                <input
+                  type="email"
+                  class="form__input"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
               </label>
             </fieldset>
+            <label class="form__label form__label_type_button">
+              <button type="submit" class="form__button" name="submit" required>
+                Book a table
+              </button>
+            </label>
+            <label class="form__label form__label_type_checkbox">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                name="checkbox"
+                required
+              />
+              I agree with the terms of use
+            </label>
           </form>
         </section>
       </main>
