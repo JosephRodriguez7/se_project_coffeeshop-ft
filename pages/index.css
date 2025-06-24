@@ -394,12 +394,3 @@
 .footer__copyright {
   margin: 108px 0 0;
 }
-
-@keyframes smooth-transition {
-  from {
-    background-color: #1878dc;
-  }
-  to {
-    background-color: #3f96f3;
-  }
-}
