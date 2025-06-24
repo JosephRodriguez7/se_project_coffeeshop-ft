@@ -20,6 +20,7 @@ As a result of best responsive practices in CSS, absolute values in pixels were 
 - CSS animation and transform
 - CSS responsive practices
 - Custom home-link button embedded in footer logo
+- Functional nav links with smooth-scrolling
 
 ## Plan on improving the project
 
