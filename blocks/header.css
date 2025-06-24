@@ -84,4 +84,9 @@
 .nav__link {
   color: #000;
   text-decoration: none;
+  transition: opacity 1s ease;
+}
+
+.nav__link:hover {
+  opacity: 50%;
 }

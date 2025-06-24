@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,13 +8,7 @@
     <meta name="author" content="Software Engineer" />
     <meta name="keywords" content="HTML, CSS" />
     <link rel="stylesheet" href="pages/index.css" />
-    <link
-      rel="stylesheet"
-      href="pages/about.css"
-      <link
-      rel="stylesheet"
-      href="vendor/normalize.css"
-    />
+    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +20,7 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header" id="header-id">
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
@@ -34,10 +28,12 @@
             class="nav__logo"
           />
           <ul class="nav__links">
-            <li><a class="nav__link">Recipes</a></li>
-            <li><a class="nav__link">Book a table</a></li>
-            <li><a class="nav__link">Menu</a></li>
-            <li><a class="nav__link">Contacts</a></li>
+            <li><a class="nav__link" href="#recipes-id">Recipes</a></li>
+            <li>
+              <a class="nav__link" href="#reservation-id">Book a table</a>
+            </li>
+            <li><a class="nav__link" href="#menu-id">Menu</a></li>
+            <li><a class="nav__link" href="#footer-id">Contacts</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -66,7 +62,7 @@
       </header>
 
       <main class="content">
-        <section class="recipes">
+        <section class="recipes" id="recipes-id">
           <h2 class="recipes__title">Recipes</h2>
           <h3 class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -103,7 +99,7 @@
             </div>
           </div>
         </section>
-        <section class="reservation">
+        <section class="reservation" id="reservation-id">
           <h2 class="reservation__title">Book a table</h2>
           <form class="form reservation__form">
             <fieldset class="form__fieldset">
@@ -165,7 +161,7 @@
             </label>
           </form>
         </section>
-        <section class="menu">
+        <section class="menu" id="menu-id">
           <h2 class="menu__title">Menu</h2>
           <h3 class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
@@ -262,18 +258,21 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" id="footer-id">
         <div class="footer__content">
-          <img
-            src="./images/logo_coffeeshop_light.svg"
-            alt="Triple Peaks Logo"
-            class="footer__logo"
-          />
+          <a class="footer__home-link" href="#header-id">
+            <img
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Triple Peaks Logo"
+              class="footer__logo"
+              href="#header-id"
+            />
+          </a>
           <div>
             <h4 class="footer__social-heading">Social media</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="#" class="footer__social-link">
+                <a href="#" class="footer__social-link" target="_blank">
                   <img
                     src="./images/facebook_white.svg"
                     alt="Facebook icon"
@@ -283,7 +282,7 @@
                 </a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__social-link">
+                <a href="#" class="footer__social-link" target="_blank">
                   <img
                     src="./images/instagram_white.svg"
                     alt="Instagram icon"
@@ -295,7 +294,7 @@
             </ul>
           </div>
         </div>
-        <p class="footer__copyright">&copy; 2025 Your name</p>
+        <p class="footer__copyright">&copy; 2025 Joseph Rodriguez</p>
       </footer>
     </div>
   </body>
